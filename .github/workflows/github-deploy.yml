@@ -24,6 +24,11 @@ jobs:
         run: echo "Hello World"
 
       - name: n개의 명령어 문장 테스트
-        run :
+        run : |
           echo "TEST1"
           echo "Final"
+
+      - name: Github Actions 자체에 저장되어 있는 변수 사용해보기
+        run: |
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
